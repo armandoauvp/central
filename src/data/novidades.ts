@@ -60,6 +60,145 @@ export const mesNumero = (mes: string) => MES_NUMERO[mes.trim().toLowerCase()] ?
 
 export const novidadesMensais: NovidadeMensal[] = [
   {
+    mes: "Outubro", ano: 2026,
+    intro: "Fala galerinha! Como estamos? O mês de outubro acabou de acabar e, como de costume, a equipe AUVP trabalhou duro para trazer mais novidades exclusivas para vocês. Então, sem mais delongas, vem ver tudo o que rolou de novo por aqui!",
+    items: [
+      {
+        emoji: "📖",
+        titulo: "O primeiro livro da AUVP",
+        descricao: "Mudar a forma como o brasileiro lida com o dinheiro é algo que construímos em comunidade — e, para que a próxima geração não repita os nossos velhos erros, precisamos começar pela base. Foi com esse propósito que lançamos a nossa própria versão em HQ do clássico \"O Homem Mais Rico da Babilônia\". Com edição em capa dura e prefácio do Raul, é a ferramenta perfeita para sentar com as crianças e ensinar sobre riqueza antes que o mundo ensine sobre escassez da pior forma, ou para incluir na sua coleção pessoal.",
+        resultados: [
+          "HQ do clássico \"O Homem Mais Rico da Babilônia\", em capa dura",
+          "Prefácio do Raul",
+          "Regra solidária: a cada exemplar comprado, a AUVP doa outro para escolas e instituições parceiras",
+        ],
+      },
+      {
+        emoji: "🤝",
+        titulo: "Nova Plataforma de Conselheiros",
+        descricao: "O Programa de Conselheiros AUVP, que conecta membros da comunidade a pessoas dispostas a compartilhar experiências sobre carreira, finanças e relacionamentos, ganhou uma nova casa este mês. Para participar, basta acessar a plataforma, escolher o conselheiro com a experiência que você busca e agendar um horário disponível direto na agenda dele.",
+        antes: "O Programa de Conselheiros funcionava sem um espaço próprio para explorar perfis e marcar as conversas.",
+        depois: "Plataforma exclusiva para explorar os perfis dos conselheiros, agendar conversas e acompanhar atualizações.",
+      },
+      {
+        emoji: "📊",
+        titulo: "Relatório de ativos + descontados",
+        descricao: "A queda forte da bolsa no dia 26 gerou dúvidas na galera, então o nosso time de Alocação preparou um material especial para a comunidade, focado nos principais ativos que sofreram retração. A ideia é separar o ruído de mercado do que realmente mudou nas empresas, analisando a fundo os indicadores de 13 companhias — um conteúdo para trazer tranquilidade e lembrar que momentos de turbulência costumam abrir excelentes oportunidades para quem foca no longo prazo.",
+      },
+      {
+        emoji: "🪩",
+        titulo: "AUVP Private Day 2026",
+        descricao: "O encontro mais aguardado do ano está chegando e vai reunir muita gente da comunidade em Goiânia. As vendas de ingressos estão oficialmente encerradas e estamos preparando uma experiência inesquecível para quem vai estar com a gente. E, para registrar tudo de um jeito super especial, vai rolar o Desafio Extraoficial da Baguncinha 2026 para quem conseguiu estar presente nesta edição.",
+      },
+    ],
+    spoiler: [
+      "📱 Aplicativo próprio da AUVP — em desenvolvimento",
+      "💼 AUVP Advisors — finalizando o cadastro dos consultores",
+      "📱 SuperApp da AUVP Escola — em desenvolvimento",
+      "🌍 Módulo de geopolítica do Oriente Médio — no roadmap",
+    ],
+  },
+  {
+    mes: "Setembro", ano: 2026,
+    intro: "Oi, pessoas! Tudo bem? Setembro passou voando e, como sempre, nossa equipe aproveitou o mês para tirar vários projetos do papel e deixar nossa casa ainda melhor. Bora conferir as novidades que preparamos para vocês?",
+    items: [
+      {
+        emoji: "🤝",
+        titulo: "Lançamento do Indica AUVP",
+        descricao: "A espera acabou: lançamos a nossa plataforma exclusiva, feita para dar clareza e gestão a vocês que indicam a nossa marca de verdade. A lógica é simples: vocês atuam como verdadeiros embaixadores e recebem links exclusivos para recomendar a AUVP Escola e a Consultoria Resolve Aí. A cada pessoa que fechar com a gente através do seu link único, você avança na nossa trilha e fica mais perto de garantir prêmios.",
+        destaque: {
+          titulo: "Indica AUVP",
+          descricao: "Nossa plataforma de indicação exclusiva, feita para premiar, trazer clareza e facilitar a gestão dos membros que recomendam a marca da AUVP de verdade.",
+        },
+      },
+      {
+        emoji: "🛒",
+        titulo: "Novidades na loja do Investidor Sardinha",
+        descricao: "A loja oficial do Investidor Sardinha cresceu e os novos produtos estão incríveis! Para além das tradicionais meias vermelhas e do boné \"O Capitalismo\", que já estavam disponíveis, agora temos mais duas opções: a nossa vela de flor de laranjeira exclusiva e o Punch me up Drink.",
+      },
+      {
+        emoji: "💼",
+        titulo: "Marcelo Flora CONFIRMADO no Private Day 2026",
+        descricao: "Mais um nome de peso na lista de palestrantes do Private Day: Marcelo Flora, um dos sócios mais relevantes do BTG Pactual. Ele entrou como analista no banco em 2000, hoje é Diretor Estatutário e foi o responsável pela digitalização do BTG. No evento, ele vai contar o que sustenta uma carreira de sucesso e compartilhar essa bagagem com a gente. As vagas são limitadas e estamos na reta final!",
+      },
+      {
+        emoji: "✈️",
+        titulo: "Rolou Giro da Bolsa Itinerante em Floripa — e já temos o próximo destino",
+        descricao: "O 4º destino do nosso Giro da Bolsa Itinerante foi Florianópolis, no dia 18 de setembro. Como de costume, o clima foi de conversa boa e trocas genuínas — é sempre muito bom estar com vocês presencialmente. E o próximo destino já está definido: a tão pedida, esperada e falada cidade maravilhosa, o Rio de Janeiro!",
+      },
+      {
+        emoji: "🎓",
+        titulo: "Mudança nos acessos da AUVP Escola",
+        descricao: "Fizemos uma reestruturação na nossa plataforma e as turmas desde janeiro de 2026 terão acesso por 1 ano a todas as ferramentas, o que passa a incluir as lives semanais, a AUVP Analítica e os conteúdos extras.",
+        resultados: [
+          "Lives semanais",
+          "AUVP Analítica",
+          "Módulos extras: Macroeconomia & Geopolítica, Imposto de Renda, Criptomoedas, Analisando Setores e Indicadores & Aulas Técnicas",
+        ],
+      },
+    ],
+    spoiler: [
+      "📱 Aplicativo próprio da AUVP Banking — em desenvolvimento",
+      "🤖 SardIA: uma IA para autoatendimento de dúvidas de conteúdo da Escola — em desenvolvimento",
+      "💼 AUVP Advisors — em fase de teste com alguns consultores; em breve, abertura para novas inscrições",
+      "🌍 Módulo de geopolítica do Oriente Médio (exclusivo AUVP Sempre) — no roadmap",
+    ],
+  },
+  {
+    mes: "Agosto", ano: 2026,
+    intro: "Eai pessoal, tudo certo? Agosto tem a fama de ser o mês que não acaba nunca, né? Mas por aqui seguimos com a visão de longo prazo e aproveitamos esses \"longos\" dias para consolidar melhorias importantes nas nossas plataformas e ferramentas. Bora conferir no que a Equipe AUVP trabalhou esse mês?",
+    items: [
+      {
+        emoji: "🖥️",
+        titulo: "Plano de Estudos no Minha AUVP",
+        descricao: "Para ajudar todo mundo que precisa tomar as rédeas do seu processo de aprendizagem, a nossa nova funcionalidade já está disponível no Minha AUVP. Com ela, você programa os estudos de acordo com a sua rotina, acompanha o seu desempenho de perto e até recalcula a rota conforme o que está rolando no seu dia a dia — tudo para manter a sua evolução constante.",
+        destaque: {
+          titulo: "Plano de Estudos inteligente",
+          descricao: "Tome as rédeas do seu aprendizado com a nova ferramenta inteligente do Minha AUVP: personalize sua rotina de estudos, acompanhe o desempenho e ajuste a rota.",
+        },
+      },
+      {
+        emoji: "🧠",
+        titulo: "Mapas mentais dos módulos 4 e 5",
+        descricao: "Incluímos na plataforma da Escola os mapas mentais de todas as aulas dos módulos 4 e 5. Esse material visual foi desenhado para facilitar a fixação dos conceitos técnicos abordados no treinamento e ajudar ainda mais na aprendizagem de vocês.",
+      },
+      {
+        emoji: "📱",
+        titulo: "Novidades no Minhas Finanças",
+        descricao: "Implementamos várias melhorias na ferramenta para ajudar na sua organização e no seu planejamento financeiro.",
+        resultados: [
+          "Nova aba de Recorrências: cadastre uma vez suas entradas e saídas fixas e acompanhe os próximos lançamentos previstos, sem repetir o preenchimento todo mês",
+          "Novo calendário de gastos no painel: visão de saídas por dia, para identificar os dias de mais gastos e a distribuição das despesas",
+          "Perfil e Metas juntos: configurações reorganizadas numa única área",
+          "Renda de Referência Mensal: deixa de representar uma receita do mês e passa a servir só de referência para o planejamento e a distribuição das metas",
+        ],
+      },
+      {
+        emoji: "🌍",
+        titulo: "Ativos Internacionais e ETFs brasileiros na AUVP Analítica",
+        descricao: "Aumentamos significativamente a cobertura da AUVP Analítica para dar ainda mais autonomia na escolha e análise dos seus ativos. Tudo isso disponível para todos.",
+        antes: "A cobertura de stocks internacionais e de ETFs brasileiros na Analítica era limitada.",
+        depois: "Stocks internacionais de 15 países (como Alemanha, Bélgica e Japão) e mais ETFs brasileiros integrados, todos com selo de viabilidade.",
+      },
+      {
+        emoji: "🤝",
+        titulo: "Beta testers do Sistema de Indicação",
+        descricao: "Iniciamos de vez os testes da versão beta do nosso sistema de indicação. Logo convocaremos a galera selecionada que se voluntariou para testar a plataforma — o lançamento oficial está mais próximo do que nunca.",
+      },
+      {
+        emoji: "🎥",
+        titulo: "Giro da Bolsa Florianópolis vem aí",
+        descricao: "Mais uma edição do Giro da Bolsa Itinerante está chegando, e a cidade da vez é Florianópolis. Para quem ainda não sabe, o evento itinerante é a gravação ao vivo e sem censura do programa semanal do canal do Raul, que compila os principais acontecimentos do mercado. Logo divulgaremos a data oficial e liberaremos os ingressos.",
+      },
+    ],
+    spoiler: [
+      "📱 SuperApp da AUVP — em fase de desenvolvimento",
+      "🌍 Módulo de geopolítica do Oriente Médio (exclusivo AUVP Sempre) — no roadmap",
+      "📝 Atualizações no módulo de Valuation (exclusivo AUVP Sempre) — no roadmap",
+    ],
+    rodape: "E com isso, bora para setembro! Caso tenham mais sugestões ou ideias, podem mandar pra gente. Nós continuamos de olho em tudo o que nos sugerem.",
+  },
+  {
     mes: "Julho", ano: 2026,
     intro: "Fala, galera, como estamos? Julho chegou ao fim e, como de costume, a nossa equipe não parou um segundo: tivemos lançamentos muito aguardados que vão facilitar (e muito) a jornada e a gestão de investimentos de vocês. Bora conferir o que rolou neste mês?",
     items: [
