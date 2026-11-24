@@ -1,13 +1,21 @@
 import { Search } from "lucide-react";
 import { OPEN_PALETTE_EVENT } from "@/components/CommandPalette";
+import { SO_DESIGN_SYSTEM } from "@/lib/appMode";
 
 /**
  * Botão que abre a command palette global (Ctrl/Cmd+K).
  * Deve estar presente no header de toda página da Central — extraído do
  * PageShell para ser reutilizável em páginas com layout de header próprio
  * (Design System e Tom e Voz têm sidebar/menu customizados).
+ *
+ * No build só do Design System não há palette (ela busca na Central
+ * inteira): o botão some e fica a busca da sidebar do próprio DS.
  */
 export function SearchButton() {
+  return SO_DESIGN_SYSTEM ? null : <BuscaNaCentral />;
+}
+
+function BuscaNaCentral() {
   const isMac = typeof navigator !== "undefined" && /Mac|iPhone|iPad/.test(navigator.platform);
   return (
     <button

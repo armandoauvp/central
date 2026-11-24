@@ -5,10 +5,13 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "dev:ds": "vite --mode design-system",
     "build": "vite build",
+    "build:ds": "vite build --mode design-system",
     "build:dev": "vite build --mode development",
     "lint": "eslint .",
     "preview": "vite preview",
+    "preview:ds": "vite preview --mode design-system",
     "test": "vitest run",
     "test:watch": "vitest",
     "figma:tokens": "node scripts/figma/extract-tokens.mjs",

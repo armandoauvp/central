@@ -10,7 +10,8 @@ import { cn } from "@/lib/utils";
  * aceita botões extras alinhados à direita.
  */
 interface PageHeroProps {
-  icon: React.ElementType;
+  /** Ícone na caixinha ao lado do título. Sem ele, o título fica sozinho. */
+  icon?: React.ElementType;
   title: string;
   description: React.ReactNode;
   actions?: React.ReactNode;
@@ -25,9 +26,11 @@ export function PageHero({ icon: Icon, title, description, actions, className, i
         <div className="flex flex-wrap items-end justify-between gap-6">
           <div>
             <div className="flex items-center gap-4 mb-4">
-              <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-primary/10 text-primary">
-                <Icon className="h-6 w-6" />
-              </span>
+              {Icon && (
+                <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-primary/10 text-primary">
+                  <Icon className="h-6 w-6" />
+                </span>
+              )}
               <h1 className="text-3xl md:text-4xl font-bold font-anek text-foreground">{title}</h1>
             </div>
             <p className="text-muted-foreground font-roboto max-w-2xl">{description}</p>
