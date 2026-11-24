@@ -513,7 +513,6 @@ export default function DesignSystemPage() {
 
       <PageHero
         id="intro"
-        icon={Palette}
         title="Bem-vindo ao Design System AUVP"
         description="A referência oficial de tokens visuais, componentes e padrões de interface das marcas AUVP Capital e AUVP Escola. Navegue pela sidebar para explorar cada área."
       />

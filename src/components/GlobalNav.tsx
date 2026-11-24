@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useNavigate, useLocation } from "react-router-dom";
 import { cn } from "@/lib/utils";
+import { SO_DESIGN_SYSTEM } from "@/lib/appMode";
 import { olhoBranco, olhoPreto } from "@/assets/olhos";
 import {
   DropdownMenu,
@@ -58,7 +59,33 @@ const systems = [
   },
 ];
 
+/**
+ * No build só do Design System a navegação global vira só a marca: sem os
+ * outros sistemas, sem links externos e sem o logo levando ao Hub.
+ */
+function MarcaDesignSystem() {
+  return (
+    <button
+      type="button"
+      onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+      className="flex items-center gap-3 shrink-0 rounded-lg outline-none focus-visible:ring-2 focus-visible:ring-primary"
+      aria-label="Voltar ao topo do Design System"
+    >
+      <img src={olhoPreto.url} alt="" aria-hidden="true" className="h-8 w-8 md:h-10 md:w-10 dark:hidden" />
+      <img src={olhoBranco.url} alt="" aria-hidden="true" className="hidden h-8 w-8 md:h-10 md:w-10 dark:block" />
+      <span className="text-left">
+        <span className="block text-sm font-bold font-anek leading-tight text-foreground">Design System</span>
+        <span className="block text-[10px] text-muted-foreground leading-tight font-roboto uppercase tracking-wider">AUVP</span>
+      </span>
+    </button>
+  );
+}
+
 export function GlobalNav() {
+  return SO_DESIGN_SYSTEM ? <MarcaDesignSystem /> : <GlobalNavCentral />;
+}
+
+function GlobalNavCentral() {
   const navigate = useNavigate();
   const location = useLocation();
   const [hoveredId, setHoveredId] = useState<string | null>(null);

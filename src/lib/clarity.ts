@@ -13,6 +13,8 @@
  * igual com ou sem a ferramenta.
  */
 
+import { SO_DESIGN_SYSTEM } from "@/lib/appMode";
+
 /** Projeto "Central de Produto AUVP" no painel do Clarity. */
 const ID_VERSIONADO = "xv5oww7983";
 
@@ -22,8 +24,11 @@ const emLocalhost =
   typeof window !== "undefined" &&
   /^(localhost|127\.0\.0\.1|\[::1\])$/.test(window.location.hostname);
 
+/* O build só do Design System não usa o ID versionado: as sessões dele
+   sujariam as métricas da Central. Lá o Clarity só liga com a variável. */
 const PROJECT_ID =
-  ID_DA_VARIAVEL || (import.meta.env.PROD && !emLocalhost ? ID_VERSIONADO : undefined);
+  ID_DA_VARIAVEL ||
+  (import.meta.env.PROD && !emLocalhost && !SO_DESIGN_SYSTEM ? ID_VERSIONADO : undefined);
 
 /** Chave onde fica o identificador anônimo e estável desta pessoa. */
 const ID_KEY = "auvp-clarity-id";
