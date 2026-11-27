@@ -1,6 +1,6 @@
 import React from "react";
 import { useBrand } from "@/contexts/BrandContext";
-import { cn } from "@/lib/utils";
+import { cn, publicUrl } from "@/lib/utils";
 import { olhoBranco, olhoPreto, olhoAmarelo, downloadSvgBlob, downloadPngFromSvg, downloadIcoFromSvg, downloadIcoFetch } from "@/assets/olhos";
 import { imprimirImagem } from "@/lib/imprimirImagem";
 import { Star, AlertTriangle, ArrowDown, Download, FileImage, FileText } from "lucide-react";
@@ -338,6 +338,46 @@ export function MarcaLogos() {
           </div>
         </div>
       )}
+
+      {/* Alavanca AUVP — iniciativa de investimento em SaaS (vale para as duas marcas) */}
+      <div>
+        <h3 className="text-lg font-bold mb-2 font-anek">Alavanca AUVP</h3>
+        <p className="text-muted-foreground mb-6">
+          Logo da iniciativa de investimento em SaaS. Deriva do sistema AUVP: olho, letras do wordmark (A e V originais; L, N e
+          C desenhados no mesmo traço) e a assinatura AUVP sob o fio.
+        </p>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <LogoCard
+            src={publicUrl("/logos/alavanca-auvp/alavanca-auvp-branca.svg")}
+            alt="Alavanca AUVP Branca"
+            label="Branca (Principal)"
+            height="h-10"
+            bg="bg-neutral-900"
+            borderClass="border-2 border-neutral-800"
+            textColor="text-neutral-300"
+            badge="Principal"
+            badgeClass="text-neutral-100 bg-white/10"
+            darkBg
+          />
+          <LogoCard
+            src={publicUrl("/logos/alavanca-auvp/alavanca-auvp-preta.svg")}
+            alt="Alavanca AUVP Preta"
+            label="Preta — fundos claros"
+            height="h-10"
+            bg="bg-neutral-100"
+          />
+          <LogoCard
+            src={publicUrl("/logos/alavanca-auvp/alavanca-auvp-amarela.svg")}
+            alt="Alavanca AUVP Amarela"
+            label="Amarela — destaque"
+            height="h-10"
+            bg="bg-neutral-900"
+            borderClass="border-2 border-neutral-800"
+            textColor="text-neutral-300"
+            darkBg
+          />
+        </div>
+      </div>
 
       {/* Versão Preferencial */}
       <div>
