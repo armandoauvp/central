@@ -339,18 +339,19 @@ export function MarcaLogos() {
         </div>
       )}
 
-      {/* Alavanca AUVP — iniciativa de investimento em SaaS (vale para as duas marcas) */}
+      {/* Merge AUVP — iniciativa de investimento em SaaS (vale para as duas marcas) */}
       <div>
-        <h3 className="text-lg font-bold mb-2 font-anek">Alavanca AUVP</h3>
+        <h3 className="text-lg font-bold mb-2 font-anek">Merge AUVP</h3>
         <p className="text-muted-foreground mb-6">
-          Logo da iniciativa de investimento em SaaS. Marca própria: símbolo de alavanca (fulcro e barra subindo) e
-          &quot;alavanca&quot; em minúsculas geométricas, com o wordmark AUVP só como assinatura, sem o olho.
+          Logo da iniciativa de investimento em SaaS com Augusto Galego. &quot;merge&quot; em minúsculas geométricas, com o
+          segundo arco do &quot;m&quot; em laranja (o merge acontecendo dentro do nome), e o wordmark AUVP como assinatura
+          depois do fio, sem o olho.
         </p>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           <LogoCard
-            src={publicUrl("/logos/alavanca-auvp/alavanca-auvp-branca.svg")}
-            alt="Alavanca AUVP Branca"
-            label="Branca (Principal)"
+            src={publicUrl("/logos/merge-auvp/merge-auvp-laranja.svg")}
+            alt="Merge AUVP Arco Laranja"
+            label="Arco laranja (Principal)"
             height="h-10"
             bg="bg-neutral-900"
             borderClass="border-2 border-neutral-800"
@@ -360,16 +361,16 @@ export function MarcaLogos() {
             darkBg
           />
           <LogoCard
-            src={publicUrl("/logos/alavanca-auvp/alavanca-auvp-preta.svg")}
-            alt="Alavanca AUVP Preta"
+            src={publicUrl("/logos/merge-auvp/merge-auvp-preta-laranja.svg")}
+            alt="Merge AUVP Preta"
             label="Preta — fundos claros"
             height="h-10"
             bg="bg-neutral-100"
           />
           <LogoCard
-            src={publicUrl("/logos/alavanca-auvp/alavanca-auvp-laranja.svg")}
-            alt="Alavanca AUVP Laranja"
-            label="Fulcro laranja — destaque"
+            src={publicUrl("/logos/merge-auvp/merge-auvp-branca.svg")}
+            alt="Merge AUVP Branca"
+            label="Branca — sobre cor ou foto"
             height="h-10"
             bg="bg-neutral-900"
             borderClass="border-2 border-neutral-800"
