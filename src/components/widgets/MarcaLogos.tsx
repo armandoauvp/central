@@ -343,8 +343,8 @@ export function MarcaLogos() {
       <div>
         <h3 className="text-lg font-bold mb-2 font-anek">Alavanca AUVP</h3>
         <p className="text-muted-foreground mb-6">
-          Logo da iniciativa de investimento em SaaS. Deriva do sistema AUVP: olho, letras do wordmark (A e V originais; L, N e
-          C desenhados no mesmo traço) e a assinatura AUVP sob o fio.
+          Logo da iniciativa de investimento em SaaS. Marca própria: símbolo de alavanca (fulcro e barra subindo) e
+          &quot;alavanca&quot; em minúsculas geométricas, com o wordmark AUVP só como assinatura, sem o olho.
         </p>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           <LogoCard
@@ -367,9 +367,9 @@ export function MarcaLogos() {
             bg="bg-neutral-100"
           />
           <LogoCard
-            src={publicUrl("/logos/alavanca-auvp/alavanca-auvp-amarela.svg")}
-            alt="Alavanca AUVP Amarela"
-            label="Amarela — destaque"
+            src={publicUrl("/logos/alavanca-auvp/alavanca-auvp-laranja.svg")}
+            alt="Alavanca AUVP Laranja"
+            label="Fulcro laranja — destaque"
             height="h-10"
             bg="bg-neutral-900"
             borderClass="border-2 border-neutral-800"
